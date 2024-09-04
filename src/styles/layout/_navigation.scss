@@ -1,0 +1,60 @@
+/* ------------------------------- header-expose ------------------------------- */
+.header-expose {
+  display: none;
+
+  @include respond-to("md") {
+    display: block;
+  }
+
+  .header-document__mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .header-document__control-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .header-expose__container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 20px;
+
+    border-bottom: 1px solid $neutrals-soft-grey;
+  }
+
+  .header-expose__icon {
+    cursor: pointer;
+
+    mat-icon {
+      display: flex;
+    }
+  }
+
+  .header-expose__title {
+  }
+
+  .header-expose__page {
+    color: $silverSonic;
+  }
+}
+
+/* ------------------------------- header-onboarding ------------------------------- */
+.header-onboarding {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .header-onboarding__title {
+  }
+
+  .header-onboarding__btn {}
+}

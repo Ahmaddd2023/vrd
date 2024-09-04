@@ -1,0 +1,17 @@
+<div class="textbox-blocks">
+  <div class="textbox-block" *ngFor="let item of items; let i = index">
+    <div class="text-block" [ngClass]="{'show-text': item.showText}">
+      <div class="text-block-title" (click)="toggleText(item)">
+        <img class="utility--info utility--textbox-mob" [src]="item.image">
+        </div>
+        <div class="text-content" *ngIf="item.showText" (click)="toggleText(item)" [attr.id]="'text-content-' + i">
+        {{ item.textContent }}
+      </div>
+        
+      </div>
+      
+        <div class="text-block-subtitle">
+        <img class="utility--info utility--subtitle-mob" [src]="item.subtitleImage">
+          </div>
+    </div>
+</div>

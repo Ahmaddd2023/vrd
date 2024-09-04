@@ -1,0 +1,630 @@
+.verdari-container {
+  width: 100%;
+  //max-width: 1440px;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.verdari-diamodz--text {
+  color: #fff;
+  text-align: center;
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  letter-spacing: 1px;
+  justify-content: center;
+
+  @media all and (max-width: 768px) {
+    color: #fff;
+    text-align: center;
+    font-family: Monument Extended;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 20px;
+  }
+}
+
+.team-blocks {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 50px;
+  flex-wrap: wrap;
+
+  @media all and (max-width: 768px) {
+    flex-wrap: nowrap;
+    overflow: auto;
+    width: auto;
+    justify-content: normal;
+    padding: 50px 20px 0;
+  }
+}
+
+.team-blocks::-webkit-scrollbar {
+  width: 12px;
+}
+
+.team-blocks::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.team-blocks::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.verdari-diamondz-text {
+  margin: 0 auto;
+
+  @media all and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.verdari-diamondz-text-mob {
+  display: none;
+
+  @media all and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: min-content;
+  }
+}
+
+.verdari-diamondz-logotype {
+  margin: 0 auto;
+  //  padding-bottom: 51px;
+
+  @media all and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.verdari-diamondz-logotype-mob {
+  display: none;
+
+  @media all and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+.verdari-text-size20 {
+  color: #fff;
+  text-align: center;
+  font-family: Monument Extended;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: normal;
+}
+
+.utility--info {
+  margin: auto;
+}
+
+.utility--info-sub {
+  margin: auto;
+}
+
+.utility--info:hover {
+  // opacity: 0.5;
+
+  // transition: 0.3s ease;
+}
+
+.utility-blocks {
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+  @media all and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.team-title {
+  color: #3afe14;
+  text-align: center;
+  font-family: Monument Extended;
+  font-size: 24px;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-weight: 700;
+  line-height: normal;
+  margin: 10px 0;
+}
+
+.breaker {
+  //   background-image: url(/assets/images/verdari-img/Frame1.svg);
+  margin: 150px 0;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  overflow: hidden;
+
+  @media all and (max-width: 768px) {
+    background-size: auto;
+    height: 40px;
+    margin: 80px 0;
+  }
+}
+
+.breaker-img {
+  animation: animate 30s linear infinite;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.breaker-green {
+  background-image: url(/assets/images/verdari-img/Frame2.svg);
+
+  margin: 150px 0;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media all and (max-width: 768px) {
+    background-size: auto;
+    height: 35px;
+    margin: 80px 0;
+  }
+}
+
+.verdari-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  margin: 0 auto;
+}
+
+.utility--info-mob {
+  @media all and (max-width: 768px) {
+    width: 128px;
+    height: 93px;
+  }
+}
+
+utility--textbox-mob {
+  @media all and (max-width: 768px) {
+  }
+}
+
+.team--img-mob {
+  width: 200px;
+  height: 200px;
+
+  @media all and (max-width: 768px) {
+    width: 175px;
+    height: 175px;
+  }
+}
+
+.verdari-about-container {
+  padding-bottom: 150px;
+
+  @media all and (max-width: 768px) {
+    padding-bottom: 80px;
+  }
+}
+
+.header-verdari {
+  @media all and (max-width: 768px) {
+    padding: 80px 20px;
+  }
+}
+
+.utility--subtitle-mob {
+  @media all and (max-width: 768px) {
+    margin: auto;
+    width: 250px;
+    height: 56px;
+  }
+}
+
+.verdari-section {
+  padding: 0 20px;
+}
+
+.partner-block {
+}
+
+.partner-img {
+}
+
+.new-design-set {
+  width: 100%;
+  max-width: 750px;
+  height: 100%;
+  max-height: 200px;
+}
+
+.collage-size {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.collage-com-size {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  margin-top: -150px;
+}
+
+.stars-size-right {
+  width: 150px;
+  position: absolute;
+  right: 80px;
+  top: 30px;
+}
+
+.stars-size-left {
+  width: 150px;
+  position: absolute;
+  bottom: 220px;
+  left: 50px;
+}
+
+.block-dani {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @media all and (max-width: 768px) {
+    width: 100%;
+    max-width: inherit;
+  }
+}
+
+.verdari-title-48 {
+  color: #ff1180;
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  //letter-spacing: 1px;
+  font-weight: 900;
+  line-height: normal;
+
+  @media all and (max-width: 768px) {
+    color: #ff1180;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+}
+.verdari-title-55 {
+  color: #ff1180;
+  font-family: Monument Extended;
+  font-size: 55px;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-weight: 900;
+  line-height: normal;
+
+  @media all and (max-width: 768px) {
+    color: #ff1180;
+    font-family: Monument Extended;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+}
+
+.info-container {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+
+  @media all and (max-width: 768px) {
+    gap: 0;
+  }
+}
+
+.diamonds-container {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.verdari-text-align {
+  text-align: left;
+}
+
+.verdari-list {
+  list-style-type: disc;
+}
+
+.verdari-marker {
+  color: #fff;
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: normal;
+  margin-bottom: 20px;
+  margin-left: 30px;
+
+  @media all and (max-width: 768px) {
+    color: #fff;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.verdari-marker:last-child {
+  margin-bottom: 0;
+}
+
+.verdari-img {
+}
+
+.utility-subtitle {
+  padding: 50px 0;
+}
+
+.btn-verdari {
+  position: relative;
+  color: #3afe14;
+  font-family: Monument Extended;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: none;
+  letter-spacing: 1px;
+  border: 5px solid #3afe14;
+  padding: 10px;
+  width: fit-content;
+  white-space: nowrap;
+  cursor: pointer;
+
+  @media all and (max-width: 768px) {
+    width: auto;
+    font-size: 20px;
+    white-space: normal;
+    margin: 0 auto;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -23px;
+    left: 83%;
+    width: 169px;
+    height: 97px;
+    background-image: url(/assets/images/verdari-img/sticker.svg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 3;
+
+    @media all and (max-width: 768px) {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: 70%;
+      // max-width: 160px;
+      width: 80px;
+      height: 94px;
+      background-image: url(/assets/images/verdari-img/Before-its-late-sticker.svg);
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      z-index: 3;
+    }
+  }
+
+  &:hover::after,
+  &:active::after {
+    opacity: 1;
+  }
+}
+
+.gap-0 {
+  @media all and (max-width: 768px) {
+    gap: 0px;
+    display: flex;
+  }
+}
+
+.left {
+  width: 100%;
+  max-width: 600px;
+  @media all and (max-width: 768px) {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 600px;
+  @media all and (max-width: 768px) {
+    margin: 0 auto;
+  }
+}
+
+.dani-social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  padding: 60px 0 20px;
+  flex-wrap: wrap;
+
+  @media all and (max-width: 768px) {
+  }
+}
+
+.soc-med {
+  cursor: pointer;
+  @media all and (max-width: 768px) {
+    width: auto;
+    max-width: 297px;
+  }
+}
+
+.images-wrapper {
+  position: relative;
+
+  @media all and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.flex-diamonds {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.verdari-mob-img {
+  display: none;
+  @media all and (max-width: 768px) {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+.flex-dani {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.video-mob-version {
+  @media all and (max-width: 768px) {
+    height: auto;
+    min-height: 240px;
+    width: 100%;
+  }
+}
+
+.space-text {
+  margin-bottom: -60px;
+
+  @media all and (max-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+/* ------------------------------- s-terms ------------------------------- */
+
+.s-terms {
+  .s-terms__container {
+    padding-bottom: 40px;
+
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+
+    color: rgba($white, 0.6);
+
+    h1 {
+      margin-bottom: 15px;
+
+      font-family: 'SF Pro Display', sans-serif;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+
+      color: $pink;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    .s-terms__bold {
+      font-weight: 700;
+
+      color: $pink;
+    }
+
+    .s-terms__size-20 {
+      font-size: 20px;
+    }
+
+    .s-terms__decoration {
+      text-decoration: underline;
+    }
+
+    a {
+      color: $green;
+
+      word-wrap: break-word;
+
+      transition: all 0.1s ease-in-out;
+    }
+
+    a:hover {
+      text-decoration: underline;
+
+      color: rgba($green, 0.8);
+
+      transition: all 0.1s ease-in-out;
+    }
+
+    ol {
+      list-style: none;
+      counter-reset: li;
+      margin-top: 15px;
+    }
+
+    li {
+      margin-bottom: 15px;
+    }
+
+    ol > li:before {
+      counter-increment: li;
+      content: counters(li, ".") ". ";
+      margin-right: 5px;
+    }
+
+    ul {
+      list-style: circle;
+      padding-top: 15px;
+      padding-left: 25px;
+    }
+
+    ul > li {
+      margin-right: 5px;
+    }
+  }
+}

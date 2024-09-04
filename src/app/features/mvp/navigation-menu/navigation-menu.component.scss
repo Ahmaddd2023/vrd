@@ -1,0 +1,81 @@
+.social-media-links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.social-media-link{
+    cursor: pointer;
+}
+
+.verdari-anchor-link{
+    color: #FFF;
+    cursor: pointer;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+
+
+.verdari-anchor-link:hover{
+    color: #3AFE14;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+}
+
+.verdari-anchor-links{
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 146px;
+
+    @media all and (max-width: 768px){
+        background: rgba(255, 17, 128, 0.10);
+        display: inline-flex;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.verdari-anchor{
+    display: flex;
+    align-items: center;
+    margin-left: 160px;
+
+    @media all and (max-width: 768px){
+        display: none;
+    }
+}
+
+
+.verdari-logo{
+
+    @media all and (max-width: 768px){
+        display: none;
+    }
+}
+
+.verdari-logo-mob{
+    display: none;
+
+    @media all and (max-width: 768px){
+        display: flex;
+    }
+}

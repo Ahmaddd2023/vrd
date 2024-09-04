@@ -1,0 +1,151 @@
+.accordion {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 120px;
+ // gap: 10px;
+    @media all and (max-width: 768px){
+     display: block;
+     //padding-bottom: 200px;
+     padding-bottom: 40px;
+     padding-top: 40px;
+    }
+}
+
+
+.active-header {
+  padding-bottom: 10px;
+}
+
+
+
+.accordion-item {
+  margin-bottom: 10px;
+  gap: 10px;
+  cursor: pointer;
+  width: 615px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border: 4px solid #FF1180;
+
+    @media all and (max-width: 768px){
+        width: 100%;
+    }
+}
+
+
+
+.accordion-item:hover{
+   // background: rgba(255, 255, 255, 0.10);
+    transition: background 0.5s ease-in-out;
+
+}
+
+
+.accordion-header {
+  background: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 615px;
+  width: 100%;
+  padding: 20px;
+  align-items: center;
+  //transition: 0.5s ease;
+
+
+    @media all and (max-width: 768px){
+        max-width: none;
+    }
+}
+
+.active .accordion-header {
+  //padding-bottom: 10px;
+  //transition: 0.5s ease;
+}
+
+.accordion-content {
+  overflow: hidden;
+  background: none;
+  transition: max-height 3s ease-out;
+  max-height: 0;
+  max-width: 615px;
+  width: 100%;
+
+    @media all and (max-width: 768px){
+        max-width: none;
+    }
+}
+
+.arrow {
+  font-size: 20px;
+  transition: transform 0.3s ease-out;
+}
+
+.active .accordion-content {
+  max-height: 1000px;
+}
+
+.accordion-column{
+    display: flex;
+    flex-direction: column;
+
+   // margin-right: 10px;
+
+    @media all and (max-width: 768px){
+        margin-right: 0;
+    }
+}
+
+.accordion-text{
+    padding: 20px;
+    padding-top: 0;
+
+    color: #FFF;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 24px;
+    //opacity: 0.6;
+    width: 540px;
+
+    @media all and (max-width: 768px){
+        width: auto;
+    }
+}
+
+
+.arrow img {
+  width: 32px;
+  height: 32px;
+}
+
+.arrow {
+  transition: transform 0.3s ease-out;
+}
+
+.rotate img {
+  transform: rotate(0deg);
+}
+
+.accordion-title{
+    color: #FF1180;
+    font-family: Monument Extended;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+}
+
+/*.rotate-back img {
+  transform: rotate(0deg);
+}
+
+.active .arrow {
+  transform: rotate(45deg);
+}*/

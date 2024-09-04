@@ -1,0 +1,338 @@
+// -----------------------------------------------------------------------------
+// Common block styles
+// -----------------------------------------------------------------------------
+
+/* ------------------------------- wrapper-mwp ------------------------------- */
+.wrapper-mwp {
+  height: 100%;
+
+  background-image: url("/assets/images/mvp/mvp-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  overflow-y: auto;
+
+  .wrapper-mwp__container {
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+    height: 100%;
+    padding: 70px 30px 40px;
+
+    @include respond-to("sm") {
+      justify-content: space-between;
+      gap: 60px;
+    }
+  }
+
+  .wrapper-mwp__container--mvp-5 {
+    padding: 70px 0 40px;
+  }
+
+  .wrapper-mwp__logo-mvp {
+  }
+}
+
+.wrapper-mwp--mvp-5 {
+  background: linear-gradient($blackSemi, $black);
+}
+
+/* ------------------------------- logo-mvp ------------------------------- */
+.logo-mvp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  .logo-mvp__icon {
+  }
+
+  .logo-mvp__title {
+    font-family: "Averta CY", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    color: $white;
+  }
+}
+
+.wrapper-expose {
+  height: 100%;
+  overflow-y: auto;
+  background-color: $white;
+
+  &.wrapper-expose__document-wrapper {
+    @include respond-to("md") {
+      height: auto;
+    }
+  }
+}
+
+.wrapper-settings {
+  height: 100vh;
+  overflow-y: auto;
+  background-color: $white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  border-right: 1px solid $neutrals-soft-grey;
+
+  display: block;
+
+  @include respond-to("md") {
+    display: none;
+  }
+}
+
+.mobile-sidebar {
+  display: none;
+  //position: absolute;
+  //left: 40px;
+  //top: 40px;
+
+  @include respond-to("md") {
+    display: block;
+  }
+}
+
+.wrapper-menu {
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* ------------------------------- btn-group ------------------------------- */
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  min-height: 52px;
+  height: 100%;
+
+  border-radius: 4px;
+
+  &::-webkit-scrollbar-thumb {
+    display: none;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include respond-to("md") {
+    margin: 0 -20px;
+
+    overflow: auto;
+
+    .btn-group__option:first-child {
+      margin-left: 20px;
+    }
+
+    .btn-group__option:last-child {
+      margin-right: 20px;
+    }
+  }
+
+  .btn-group__option {
+    position: relative;
+
+    width: 100%;
+  }
+
+  .btn-group__option:first-child {
+    .button-type {
+      border-left: 1px solid $greyMetal;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .button-type:hover {
+      border-left: 1px solid $blueTotal;
+    }
+  }
+
+  .btn-group__option:nth-child(1n + 2) {
+    .button-type {
+      border-left: 1px solid $greyMetal;
+    }
+
+    .button-type:hover {
+      border-left: 1px solid $blueTotal;
+    }
+  }
+
+  .btn-group__option:last-child {
+    .button-type {
+      border-right: 1px solid $greyMetal;
+      border-radius: 0 3px 3px 0;
+    }
+
+    .button-type:hover {
+      border-right: 1px solid $blueTotal;
+    }
+  }
+
+  .btn-group__input {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+    appearance: none;
+    cursor: pointer;
+  }
+
+  .btn-group__input:checked + .button-type {
+    color: $white;
+    border: 1px solid $blueTotal;
+    background: $blueTotal;
+
+    transition: all 0.1s ease-in-out;
+  }
+}
+
+/* ------------------------------- wrapper-expose-step ------------------------------- */
+.wrapper-expose-step {
+  .wrapper-expose-step__container {
+    padding-top: 80px;
+    padding-bottom: 47px;
+
+    @include respond-to("md") {
+      padding-top: 20px;
+    }
+
+    @include respond-to("sm") {
+    //  padding-bottom: 20px;
+    }
+  }
+}
+
+.wrapper-onboarding-step {
+  .wrapper-onboarding__container {
+    width: 100%;
+  }
+}
+
+.animate-mvp {
+  .animate-mvp__animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    //transition: all 1.3s ease-in-out;
+    transition: min-height 1.3s ease-in-out;
+  }
+
+  .animate-mvp__slide-in-right {
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+
+    //transition: all 1.3s ease-in-out;
+    transition: min-height 1.3s ease-in-out;
+  }
+
+  @-webkit-keyframes slideInRight {
+    from {
+      --webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+    }
+
+    to {
+      --webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      --webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+    }
+
+    to {
+      --webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+.wrapper-expose-nav__spinner {
+  max-width: 900px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.profile-menu__container {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+
+  .mobile-sidebar__menu {
+    width: 44px;
+    height: 44px;
+    background-color: $blueTotal;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include respond-to("sm") {
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  .mobile-sidebar__document-menu {
+    @include respond-to("sm") {
+      width: 24px !important;
+      height: 24px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+/* ------------------------------- wrapper-expose-generating ------------------------------- */
+.wrapper-expose-generating {
+  .wrapper-expose-generating__container {
+  }
+}
+
+/* ------------------------------- wrapper-onboarding ------------------------------- */
+.wrapper-onboarding {
+  height: 100%;
+
+  .wrapper-onboarding__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 40px;
+  }
+
+  .wrapper-onboarding__header {}
+
+  .wrapper-onboarding__main__title {
+    text-align: center;
+  }
+
+  .wrapper-onboarding__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+  }
+}
